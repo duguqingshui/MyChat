@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    android:weightSum="1">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ri_user_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/icon"
+        app:riv_oval="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_boundary"
+        android:paddingRight="@dimen/margin_boundary"
+        >
+
+        <EditText
+            android:id="@+id/ed_loginuser"
+            style="@style/size_style_22"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/user_login_userlogo"
+            android:drawablePadding="@dimen/margin_boundary"
+            android:gravity="center_vertical"
+            android:hint="请输入用户名"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:maxLength="10"
+            android:inputType="number"
+            />
+
+        <View
+            style="@style/style_listDivider"
+            android:paddingLeft="@dimen/margin_boundary"
+            android:paddingRight="@dimen/margin_boundary"
+            />
+
+        <EditText
+            android:id="@+id/ed_pass"
+            style="@style/size_style_22"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/user_login_pswlogolo"
+            android:drawablePadding="@dimen/margin_boundary"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:maxLength="16"
+            />
+        <View
+        style="@style/style_listDivider"
+        android:paddingLeft="@dimen/margin_boundary"
+        android:paddingRight="@dimen/margin_boundary"
+        />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_login"
+        style="@style/style_btn_sel"
+        android:layout_marginTop="@dimen/margin_boundary"
+        android:onClick="onLoginButtonClick"
+        android:text="登录"
+        android:layout_height="51dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:padding="10dp">
+    <TextView
+        android:id="@+id/tv_nologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="无法登录？"
+        android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="新用户"/>
+    </LinearLayout>
+</LinearLayout>

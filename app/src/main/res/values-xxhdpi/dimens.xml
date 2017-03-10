@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size12">10sp</dimen>
+    <dimen name="size13">10sp</dimen>
+    <dimen name="size14">10sp</dimen>
+    <dimen name="size17">12sp</dimen>
+    <dimen name="size18">12sp</dimen>
+    <dimen name="size22">14sp</dimen>
+    <dimen name="size26">16sp</dimen>
+    <dimen name="size28">20sp</dimen>
+    <dimen name="size35">25sp</dimen> <!-- bloodsugar_circleview_tv_size -->
+    <dimen name="size40">26sp</dimen>
+
+    <dimen name="drawer_width">300dp</dimen>
+</resources>
